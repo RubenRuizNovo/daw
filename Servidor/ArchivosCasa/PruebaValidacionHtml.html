@@ -1,0 +1,79 @@
+<html>
+    <head>
+
+    </head>
+    <body>
+        <form 
+        action="http://localhost/pruebas/ValidacionHtml.php"
+        method="post">
+
+        <label for="estaciones">Estaciones</label>
+        <select multiple size ="3" name="estaciones[]">
+            <option value="" selected disabled hidden></option>
+            <option value="inv"> >Invierno</option>
+            <option value="pri"> >Primavera</option>
+            <option value="ver"> >Verano</option>
+            <option value="oto"> >Otono</option>
+        </select>
+        <br>
+        <br>
+        <label for="color">Color favorito</label>
+        <input type="color" name="color">
+
+        <br><br>
+
+        <label for="buscar">Buscar</label>
+        <input type="text" name="buscar">
+
+        <br><br>
+
+        <label for="nombre">Nombre</label>
+        <input type="text" name="nombre">
+
+        <br><br>
+
+        <label for="apellido">Apellido</label>
+        <input type="text" name="apellido">
+
+        <br><br>
+
+        <label for="email">E-mail</label>
+        <input type="email" name="email">
+
+        <br><br>
+
+        <label for="fecha_nacimiento">Fecha nacimiento</label>
+        <input type="date" name="fecha_nacimiento">
+
+        <br><br>
+
+        <label for="edad">Edad (de 0 a 150)</label>
+        <input type="number" min="0" max="150" name="edad">
+
+        <br><br>
+
+        <label for="pagina_personal">Pagina personal</label>
+        <input type="text" name="pagina_personal">
+
+        <label for="horario_abrir">Horario: De </label>
+        <input type="time" name="horario_abrir">
+        
+        <label for="horario_cerrar"> a: </label>
+        <input type="time" name="horario_cerrar">
+
+        <br><br>
+    
+        <label for="sexo"> Sexo: </label>
+        <input type="radio" id="hombre" name="sexo" value="hombre" checked>
+        <label for="html">Hombre</label>
+        <input type="radio" id="mujer" name="sexo" value="mujer">
+        <label for="mujer">Mujer</label>
+
+        <br><br>
+
+        <input type="submit">
+
+        
+    </form>
+    </body>
+</html>
