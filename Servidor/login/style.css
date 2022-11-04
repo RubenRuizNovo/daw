@@ -1,0 +1,9 @@
+.formulario {
+    background-color: rgb(178, 212, 228);
+    padding: 40px;
+}
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

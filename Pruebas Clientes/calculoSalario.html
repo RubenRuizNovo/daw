@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <label>Nombre: </label>
+    <input type="text" name="nombre" id="nombre"/>
+    <label>Apellido: </label>
+    <input type="text" name="apellido" id="apellido"/>
+    <label>Salario: </label>
+    <input type="number" name="salario" id="salario"/>
+    <label>Edad: </label>
+    <input type="number" name="edad" id="edad"/>
+    <input type="button" value="Calcular" onclick="calcularSalario()"/>
+    <script>
+        function calcularSalario() {
+        let edad = document.getElementById("edad").value;
+        let salario = document.getElementById("salario").value;
+
+        if (salario >= 1000 && salario <= 2000) {
+            if (edad > 45) {
+                salario = salario * 1.03;
+            }else {
+                salario = salario * 1.1;
+            }
+        }else if (salario < 1000) {
+            if (edad < 30) {
+                salario = 1100;
+            }else if (edad >= 30 && edad <= 45) {
+                salario = salario * 1.03;
+            }else {
+                salario = salario * 1.15;
+            }
+        }
+        document.write(
+            "Nombre: " + document.getElementById("nombre").value + " Apellido: " + document.getElementById("apellido").value + "Edad: " + 
+            document.getElementById("edad").value + "Salario: " + salario
+        );
+    }
+
+    </script>
+</body>
+</html>

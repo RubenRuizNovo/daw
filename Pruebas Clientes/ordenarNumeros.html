@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    #fondo {
+        position: fixed;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+    }
+    </style>
+</head>
+<body>
+    <script>
+        // const a = [5,200,456,78,9621,-123,-56564];
+        // console.log("El minimo es: " + Math.min.apply(null, a));
+        // console.log("·l maximo es: " + Math.max.apply(null, a));
+        //Ejercicio 3.3
+        // let numero = prompt("Escribe un numero: ")
+        // if (isNaN(Number(numero))) {
+        //     alert("No es un numero");
+        // }else{
+        //     alert("Es un numero");
+        // }
+        //Ejercicio 3.4
+        let rojo = parseInt(Math.random()*255);
+        let verde = parseInt(Math.random()*255);
+        let azul = parseInt(Math.random()*255);
+
+
+        let color = "rgb(" + rojo + ',' + verde + ',' + azul + ")";
+        console.log("Azul: "+ azul + "Rojo: " + rojo + "Verde: " + verde);
+        document.body.style.background = color;
+    </script>
+</body>
+</html>

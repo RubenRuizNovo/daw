@@ -1,0 +1,40 @@
+<html>
+    <head>
+        <title>Calcular area y longitud de un circulo</title>
+    </head>
+    <body>
+        <label for="radio"> Introduce el radio: </label>
+        <input type="text" id="radio" name="radio"/>
+        <input type="button" id="calcular" value="Calcular" onclick="calculo(document.getElementById(radio))"/>
+        <p id="area"></p>
+        <p id="longitud"></p>
+
+        <script>
+        
+        const PI = 3.1415;
+
+        function calculo(a) {
+            var radio = document.getElementById("radio");
+            var area;
+            var longitud;
+            longitud = 2*PI*radio;
+            area = PI*radio*radio;
+            console.log(radio);
+            console.log(longitud);
+            console.log(area);
+            
+            document.getElementById("area").innerHTML = area;
+            document.getElementById("longitud").innerHTML = longitud;
+        }
+
+        
+        
+        </script>
+
+        
+
+
+        
+
+    </body>
+</html>
