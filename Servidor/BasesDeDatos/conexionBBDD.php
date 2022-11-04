@@ -14,6 +14,22 @@
     $resultado=$mysqli -> query($query) or die ($mysqli -> error);
     $numregistros=$resultado -> num_rows;
     echo "<p>El número de clientes con nombre Empresa* es: ",$numregistros,".</p>";
+
+    echo "El resultado que espero empieza: <br>";
+    // while ($registro = $resultado -> fetch_assoc()) {
+    //     print_r($registro);
+
+    // }
+    $registro = $resultado -> fetch_assoc();
+    
+    echo "El nombre es: $registro[Nombre]";
+    //print_r($registro);
+    $registro = $resultado -> fetch_assoc();
+    print_r($registro);
+    echo $registro[1];
+    echo "El resultado que espero acaba. <br>";
+
+    
     
     while ($registro = $resultado -> fetch_assoc()) {
         echo "<tr>";
