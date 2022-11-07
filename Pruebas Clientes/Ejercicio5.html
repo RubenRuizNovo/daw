@@ -1,0 +1,27 @@
+<!-- 5.-Se pide hacer seguimiento del valor de la variable 'x' -->
+<IDOCTYPE html>
+<html>
+<head><meta charset="utf-8"/>
+<title>ECMA6 alcance asignacion let</title>
+<script>
+function programa(){
+    let x=3;
+    function func(randomize){
+        
+        if (randomize){
+            console.log("Entra en el if")
+            let x = parseInt(Math.random()*10);
+            return x;
+        }
+    return x;
+    }
+    document.getElementById("salida").innerHTML = func(false); // 3
+    document.getElementById("salida").innerHTML += "\n";
+    document.getElementById("salida").innerHTML += func(1);
+}
+</script></head><body>
+<h3>Alcance de variables (Scope)</h3>
+<input type="button" value="Pulsa aqui" onclick="programa()"/>
+<div id="salida"></div>
+</body>
+</html>
