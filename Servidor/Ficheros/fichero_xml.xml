@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<clientes>
+    <cliente>
+        <nombre>AcerSA</nombre>
+        <cif>5664332</cif>
+    </cliente>
+    <cliente>
+        <nombre>Mer SL</nombre>
+        <cif>5111444</cif>
+    </cliente>
+</clientes>
